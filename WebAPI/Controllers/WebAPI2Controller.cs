@@ -28,5 +28,12 @@ namespace WebAPI.Controllers
             return result.ToString();
         }
 
+        [HttpGet]//建議寫 雖然API會自動識別 但有寫幫助自己辨別
+        public string GetTest(int a, int b)
+        {
+            int result = a + b;
+            return result.ToString();
+        }
+
     }
 }
